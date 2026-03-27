@@ -1,30 +1,19 @@
-import { useState } from "react"
+export default function Home() {
+  return (
+    <div>
+      <h1>I Want to Eat Your Pancreas</h1>
+      <p>Obra de Yoru Sumino</p>
 
-function Home(){
-    let contador = 0
-    const [contadorState, setContadorState] = useState(0)
+      <br />
 
-    function somar(){
-        contador++
-        console.log(contador)
-    }
+      <p>
+        Uma história emocionante sobre amizade, tempo e as pequenas coisas da vida
+        que muitas vezes ignoramos.
+      </p>
 
-    function somarState(){
-        setContadorState(contadorState+1)
-    }
-
-    return(
-        <div>
-            <h1>Página Inicial</h1>
-            <p>Essa é a primeira página do site.</p>
-
-            <p>{contador}</p>
-            <button onClick={somar}>Somar</button>
-
-            <p>{contadorState}</p>
-            <button onClick={somarState}>Somar</button>
-        </div>
-    )
+      <p>
+        O filme mistura momentos leves com uma mensagem profunda sobre viver intensamente.
+      </p>
+    </div>
+  )
 }
-
-export default Home

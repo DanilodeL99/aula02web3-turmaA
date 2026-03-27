@@ -1,6 +1,6 @@
 import Home from './pages/Home'
 import Sobre from './pages/Sobre'
-import Contatos from './pages/Contatos'
+import Personagens from './pages/Contatos'
 import { useState } from 'react'
 
 function App(){
@@ -9,16 +9,16 @@ function App(){
   const renderizarPagina = ()=>{
     if(pagina === 'Home') return <Home/>
     if(pagina === 'Sobre') return <Sobre/>
-    if(pagina === 'Contatos') return <Contatos/>
+    if(pagina === 'Contatos') return <Personagens/>
   }
  
   return(
     <div className="container">
-      <h1>MEU SITE</h1>
-      <p>Esse é meu primeiro site</p>
+     <h1> I Want to Eat Your Pancreas</h1>
+<p>Uma história sobre vida, amizade e despedidas </p>
       <nav>
         <button onClick={()=>setPagina('Home')}>Home</button>
-        <button onClick={()=>setPagina('Contatos')}>Contatos</button>
+        <button onClick={()=>setPagina('Contatos')}>Personagens</button>
         <button onClick={()=>setPagina('Sobre')}>Sobre</button>
       </nav>
       <div>
