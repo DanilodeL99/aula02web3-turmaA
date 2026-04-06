@@ -1,26 +1,27 @@
 import Home from './pages/Home'
 import Sobre from './pages/Sobre'
-import Personagens from './pages/Contatos'
+import Personagens from './pages/Personagens'
 import { useState } from 'react'
 
-function App(){
+function App() {
   const [pagina, setPagina] = useState('Home')
 
-  const renderizarPagina = ()=>{
-    if(pagina === 'Home') return <Home/>
-    if(pagina === 'Sobre') return <Sobre/>
-    if(pagina === 'Contatos') return <Personagens/>
+  const renderizarPagina = () => {
+    if (pagina === 'Home') return <Home />
+    if (pagina === 'Personagens') return <Personagens />
+    if (pagina === 'Sobre') return <Sobre />
   }
- 
-  return(
+
+  return (
     <div className="container">
-     <h1> I Want to Eat Your Pancreas</h1>
-<p>Uma história sobre vida, amizade e despedidas </p>
+      <h1>I Want to Eat Your Pancreas</h1>
+
       <nav>
-        <button onClick={()=>setPagina('Home')}>Home</button>
-        <button onClick={()=>setPagina('Contatos')}>Personagens</button>
-        <button onClick={()=>setPagina('Sobre')}>Sobre</button>
+        <button onClick={() => setPagina('Home')}>Home</button>
+        <button onClick={() => setPagina('Personagens')}>Personagens</button>
+        <button onClick={() => setPagina('Sobre')}>Curiosidades</button>
       </nav>
+
       <div>
         {renderizarPagina()}
       </div>

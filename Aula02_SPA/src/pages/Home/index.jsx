@@ -1,18 +1,30 @@
+import fundo from "../../assets/livro.png"
+
 export default function Home() {
   return (
     <div>
-      <h1>I Want to Eat Your Pancreas</h1>
-      <p>Obra de Yoru Sumino</p>
+      <h2>Página Inicial</h2>
 
-      <br />
+      <img src={fundo} alt="Pôster" className="poster" />
 
       <p>
-        Uma história emocionante sobre amizade, tempo e as pequenas coisas da vida
-        que muitas vezes ignoramos.
+        I Want to Eat Your Pancreas é uma história emocionante sobre amizade,
+        tempo e a importância de viver cada momento.
       </p>
 
       <p>
-        O filme mistura momentos leves com uma mensagem profunda sobre viver intensamente.
+        O filme acompanha Haruki, um jovem reservado, e Sakura, uma garota cheia
+        de vida que guarda um grande segredo.
+      </p>
+
+      <p>
+        Mesmo sendo muito diferentes, os dois criam uma conexão inesperada que
+        transforma completamente suas vidas.
+      </p>
+
+      <p>
+        A obra mistura momentos leves com reflexões profundas sobre a vida,
+        o tempo e as relações humanas.
       </p>
     </div>
   )

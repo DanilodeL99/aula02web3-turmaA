@@ -55,12 +55,14 @@ button:hover {
   display: flex;
   justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .card {
   padding: 15px;
   border-radius: 12px;
   width: 220px;
+  background-color: #fff0f6;
 }
 
 .card img {
@@ -71,4 +73,10 @@ button:hover {
 .card p {
   margin-top: 10px;
   font-size: 14px;
+}
+
+.poster {
+  width: 250px;
+  border-radius: 12px;
+  margin-bottom: 20px;
 }
